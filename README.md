@@ -1,3 +1,7 @@
+# Based on dpmango gulp-starter-pack
+https://github.com/dpmango/gulp-starter-pack (author url)
+
+
 # Gulp Starter Pack
 This package intended to solve common front-end development tasks. Works best for psd/sketch to html projects and save you a lot of time setting up local environment
 
