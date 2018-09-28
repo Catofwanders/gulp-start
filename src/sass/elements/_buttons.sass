@@ -1,0 +1,64 @@
+// buttons
+button
+  -webkit-apperance: none
+  border: 0
+  box-shadow: none
+  cursor: pointer
+  &:focus
+    outline: none
+
+.btn
+  display: inline-block
+  position: relative
+  width: 100%
+  max-width: 280px
+  text-align: center
+  transition: all $transitionSpeed ease-in-out
+  box-shadow: 1px 4px 6px 1px rgba(255, 151, 0, 0.26)
+  border: 1px solid #ffa204
+  border-radius: 4px
+  background-color: #f97866
+  background-image: linear-gradient(to top, #ff9802 0%, #ff9802 1%, #ffc108 100%)
+  color: #ffffff
+  font-family: $font-family
+  font-size: 14px
+  font-weight: 500
+  line-height: 25px
+  text-transform: uppercase
+  letter-spacing: 0.7px
+  padding: 11px 20px
+  cursor: pointer
+  user-select: none
+  &:hover
+    box-shadow: 1px 4px 6px 1px rgba(255, 151, 0, 0.26)
+    border-radius: 4px
+    border: 1px solid #ffa204
+    background-color: #ffffff
+    background-image: none
+    color: #ff9d01   
+  &:focus, &:active
+    outline: none
+  &--block
+    display: block
+    width: 100%
+    margin: 0 auto
+label.btn
+  cursor: pointer
+  input
+    color: #ffffff
+    font-family: $font-family
+    font-size: 14px
+    font-weight: 500
+    line-height: 25px
+    text-transform: uppercase
+    letter-spacing: 0.7px
+    cursor: pointer
+    border: none
+    background: none
+    margin: 0!important
+  &:hover input
+    color: #ff9d01
+  &:after
+    position: absolute
+    right: 20px
+    top: 18px

@@ -1,0 +1,117 @@
+---
+title: Homepage title
+bodyClass: homepage
+---
+extends shared/_layout
+block content
+  
+  // dummy contents & instructions
+  // REMOVE COMPLEATLY, it have nothing to do with project code - examples only
+
+  section.section_1
+    .container
+      h1.wow(data-animation-delay: 0.1) h1
+      h2.wow(data-animation-delay: 0.6) h2
+      h3.wow(data-animation-delay: 0.9) h3
+      h4.wow(data-animation-delay: 1) h4
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quod iure. Voluptates illo autem at, eligendi cum temporibus error tempora mollitia numquam similique sit quod reiciendis veritatis delectus soluta officia.
+      span Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quod repellendus maxime labore eveniet nesciunt voluptatem quae temporibus odio excepturi quis voluptate recusandae totam dignissimos, voluptatum possimus ducimus. Distinctio, earum.
+      ul
+        li  abc
+        li  abc
+        li  abc
+        li  abc
+        li  abc
+      ol
+        li  numb
+        li  numb
+        li  numb
+        li  numb
+        li  numb
+      .flex-row
+        button.btn.js-popup(data-mfp-src="#modal-form-1") Button
+        button.btn.btn--off.js-popup(data-mfp-src="#modal-form-tnx") Button
+      .slider(js-slider)
+        img(src="./img/logo.png", alt="")
+        img(src="./img/logo.png", alt="")
+        img(src="./img/logo.png", alt="")
+      
+      .row
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3 Mumba
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3 Mumba
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3 Mumba
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3 Mumba
+    
+    // section
+    section.wow(data-animation-class="wowFadeRight")
+      .container
+        h2 UI
+        form(js-validate)
+          .ui-group
+            label Phone-mask
+            input(type="tel")
+          .ui-group
+            label Your message
+            textarea(placeholder="What's up?" rows="5" data-min-rows="5")
+          .ui-group
+            .ui-checkbox
+              input(type="checkbox" id="checkbox_1")
+              label(for="checkbox_1")
+                span I agree with <a href="#">Terms and conditions</a>
+          
+          button(type="submit").btn.btn-example Submit
+    
+    // section
+    section.wow(data-animation-class="wowFadeDown")
+      .container
+        h2 Swiper
+        .swiper-container.js-slider
+          .swiper-wrapper
+            .example-slide(style="flex: 0 0 250px;")
+              div(style="background: blue; height: 200px;")
+            .example-slide(style="flex: 0 0 250px; ")
+              div(style="background: tomato; height: 200px;")
+            .example-slide(style="flex: 0 0 250px; ")
+              div(style="background: forestgreen; height: 200px;")
+            .example-slide(style="flex: 0 0 250px;")
+              div(style="background: blue; height: 200px;")
+            .example-slide(style="flex: 0 0 250px; ")
+              div(style="background: tomato; height: 200px;")
+            .example-slide(style="flex: 0 0 250px; ")
+              div(style="background: forestgreen; height: 200px;")
+            .example-slide(style="flex: 0 0 250px;")
+              div(style="background: blue; height: 200px;")
+            .example-slide(style="flex: 0 0 250px; ")
+              div(style="background: tomato; height: 200px;")
+            .example-slide(style="flex: 0 0 250px; ")
+              div(style="background: forestgreen; height: 200px;")
+        // navigation
+        .example-next
+          span >
+        .example-prev
+          span <
+    // section
+    section.wow(data-animation-class="wowFadeDown")
+      .container
+        h2 Easings
+        p Just type any css supported easing from <a href="http://easings.net/ru" target="_blank" style="color: blue">http://easings.net/ru</a> into .sass file and it will work
+        | <br> Check out /sass/components/test for test
+        
+        .test-easing.test-easing--easeInOutQuint
+          span easeInOutQuint
+        .test-easing.test-easing--easeInCubic
+          span easeInCubic
+        .test-easing.test-easing--easeOutCirc
+          span easeOutCirc
+        .test-easing.test-easing--easeInOutBack
+          span easeInOutBack
+    // section breadcrumbs
+    section.breadcrumbs
+      .container
+        nav
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href="#") Главная
+            li.breadcrumb-item.active Видео
+          
+        

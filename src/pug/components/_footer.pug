@@ -1,0 +1,46 @@
+// FOOTER :: START
+footer.footer
+  .container
+
+// FOOTER :: END
+
+// TO TOP :: START
+div(id="back-top", class="up_btn")
+// TO TOP :: END
+
+// MODAL :: START
+
+.modal-content(id="modal-form-1" class="mfp-hide white-popup-block my-mfp-slide-bottom")
+  .popup-buble
+    .popup-dialog
+      h2 отправить запрос
+      form(action="post")
+        .ui-group
+          input(type="text", required="" placeholder="Как к Вам обращаться?")
+        .ui-group
+          label.select
+            select(name="select")
+              option(value="") Категория оборудования
+              option(value="") Категория оборудования 1
+              option(value="") Категория оборудования 2
+        .ui-group
+          label(class="file")
+            input(type="file", name="file")
+            span(class="file__attach") <i class="icon icon-file-attach"></i> Прикрепить файл
+            span.file__name Файл не выбран
+            span(class="file__format") Разрешенные типы файлов: .txt .pdf .doc .docx .excel .png .jpg .jpeg<br>Максимальный вес файла 15мб
+        .ui-group
+            .ui-checkbox
+              input(type="checkbox" id="checkbox_1")
+              label(for="checkbox_1")
+                span Согласен с условиями <a href="#">Политики конфиденциальности</a>
+        .ui-group
+          label.btn.btn--block
+            input(type="submit", value="Отправить")
+.modal-content(id="modal-form-tnx" class="mfp-hide white-popup-block my-mfp-slide-bottom modal-form-tnx")
+  .popup-buble
+    .popup-dialog
+      h2 спасибо за заявку
+      p.subtitle Мы свяжемся с вами в ближайшее время
+      a(href="#" class="btn btn--block btn--close") на страницу
+// MODAL :: END

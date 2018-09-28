@@ -1,0 +1,19 @@
+include _mixins
+doctype html
+html(lang="en")
+  head
+    include _head
+
+  body(class=bodyClass)
+    block header
+      include ../components/_header
+  
+    .page(class=outClass)
+      .page__content
+        block content
+
+      block footer
+        include ../components/_footer
+        
+    block scripts
+      include _scripts
