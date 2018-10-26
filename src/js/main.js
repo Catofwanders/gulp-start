@@ -468,10 +468,10 @@ $(document).ready(function(){
     $('.tabs .tabs__nav .tab').on('click', function(){
       if ($(this).hasClass('active')){     
       }else{
-        var currentTab = $(this).attr('data-id');
+        var currentTab = $(this).index();
         $('.tabs .tabs__nav .tab, .tabs .tabs__for .tab').removeClass('active');
         $(this).addClass('active');
-        $('.tabs .tabs__for .tab-' + currentTab).addClass('active');
+        $('.tabs .tabs__for .tab').eq(currentTab).addClass('active');
       }
     });
   }
