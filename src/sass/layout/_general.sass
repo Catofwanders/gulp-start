@@ -244,31 +244,36 @@ video
   display: flex
   flex-wrap: wrap
   padding: 10px 10px
-  margin-bottom: 0
+  margin-bottom: 20px
   list-style: none
   align-items: center
+  +r($tablet)
+    padding-top: 60px
   .breadcrumb-item 
     font-size: 14px
     font-weight: 400
+    font-size: 17px
+    font-weight: 400
+    &:not(:last-child)
+      &:after 
+        content: "»"
+        display: inline-block
+        color: rgb(102, 102, 102)
+        font-family: $font-family
+        font-size: 17px
+        font-weight: 400
+        padding: 0 10px
     a
-      color: rgb(106, 174, 228)
+      color: rgb(102, 102, 102)
       font-family: $font-family
-      font-size: 14px
+      font-size: 17px
       font-weight: 400
-    + .breadcrumb-item::before 
-      content: "»"
-      display: inline-block
-      color: rgb(170, 170, 170)
-      font-family: $font-family
-      font-size: 14px
-      font-weight: 400
-      padding: 0 10px
-    + .breadcrumb-item:hover::before 
+    + .breadcrumb-item:hover::after 
       text-decoration: underline
-    + .breadcrumb-item:hover::before 
+    + .breadcrumb-item:hover::after 
       text-decoration: none
     &.active 
-      color: rgb(170, 170, 170)
+      color: rgb(0, 154, 154)
 .pagination
   .row
     justify-content: center
