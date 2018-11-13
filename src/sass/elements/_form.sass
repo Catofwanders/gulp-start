@@ -82,6 +82,12 @@ input[type="file"]
 
 // Checkbox
 .ui-checkbox
+  &.active
+    label
+      &::before
+        border-color: $colorGreen
+      &::after
+        transform: translateY(-50%) scale(1)
   input
     display: none
     width: 0.1px
@@ -90,12 +96,6 @@ input[type="file"]
     position: absolute
     top: 0
     left: 0
-    &:checked
-      + label
-        &::before
-          border-color: $colorGreen
-        &::after
-          transform: translateY(-50%) scale(1)
   label
     display: block
     width: 100%

@@ -26,6 +26,24 @@ $sprite: (
 		total-height: 58px,
 		image: '../img/sprite.png'
 	),
+	next: (
+		offset-x: -25px,
+		offset-y: -43px,
+		width: 8px,
+		height: 12px,
+		total-width: 58px,
+		total-height: 58px,
+		image: '../img/sprite.png'
+	),
+	prev: (
+		offset-x: -43px,
+		offset-y: -43px,
+		width: 8px,
+		height: 12px,
+		total-width: 58px,
+		total-height: 58px,
+		image: '../img/sprite.png'
+	),
 	select-arrow: (
 		offset-x: -43px,
 		offset-y: -25px,
@@ -99,6 +117,12 @@ $sprite: (
 	}
 	.icon-close {
 		@include sprite(close)
+	}
+	.icon-next {
+		@include sprite(next)
+	}
+	.icon-prev {
+		@include sprite(prev)
 	}
 	.icon-select-arrow {
 		@include sprite(select-arrow)

@@ -26,6 +26,7 @@ $(document).ready(function(){
     // videoEvents(); 
     customTabs(); 
     scrollTop();
+    checkBox();
     // development helper
     _window.on('resize', debounce(setBreakpoint, 200))
 
@@ -492,5 +493,10 @@ $(document).ready(function(){
         return false;
       });
     }
+    function checkBox(){
+      $('.politics input').on('click', function(){    
+        $(this).closest('.ui-checkbox').toggleClass('active');
+      });
+      }
 
 });
