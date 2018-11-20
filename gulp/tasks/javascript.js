@@ -16,7 +16,7 @@ gulp.task('javascript:vendor', function() {
       path.resolve('node_modules', 'scrollMonitor/scrollMonitor.js'),
       path.resolve('node_modules', 'jquery-validation/dist/jquery.validate.min.js'),
       path.resolve('node_modules', 'jquery-mask-plugin/dist/jquery.mask.min.js'),
-      path.resolve('node_modules', 'jquery-selectric/public/jquery.selectric.min.js'),
+      path.resolve('node_modules', 'jquery-selectric/src/jquery.selectric.js'),
       path.resolve('node_modules', 'jquery-lazy/jquery.lazy.min.js'),
       // path.resolve('node_modules', 'animejs/anime.min.js'),
       config.src.js + '/vendor/**/*.js'
