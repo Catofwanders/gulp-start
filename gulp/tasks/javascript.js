@@ -8,17 +8,17 @@ var config      = require('../config');
 
 gulp.task('javascript:vendor', function() {
   return gulp.src([
-      path.resolve('bower_components', 'jquery/dist/jquery.min.js'),
-      path.resolve('bower_components', 'svg4everybody/dist/svg4everybody.min.js'),
-      path.resolve('bower_components', 'viewport-units-buggyfill/viewport-units-buggyfill.js'),
-      path.resolve('bower_components', 'swiper/dist/js/swiper.min.js'),
-      path.resolve('bower_components', 'magnific-popup/dist/jquery.magnific-popup.min.js'),
-      path.resolve('bower_components', 'scrollMonitor/scrollMonitor.js'),
-      path.resolve('bower_components', 'jquery-validation/dist/jquery.validate.min.js'),
-      path.resolve('bower_components', 'jquery-mask-plugin/dist/jquery.mask.min.js'),
-      path.resolve('bower_components', 'jquery-selectric/public/jquery.selectric.min.js'),
-      path.resolve('bower_components', 'jquery-lazy/jquery.lazy.min.js'),
-      // path.resolve('bower_components', 'animejs/anime.min.js'),
+      path.resolve('node_modules', 'jquery/dist/jquery.min.js'),
+      path.resolve('node_modules', 'svg4everybody/dist/svg4everybody.min.js'),
+      path.resolve('node_modules', 'viewport-units-buggyfill/viewport-units-buggyfill.js'),
+      path.resolve('node_modules', 'swiper/dist/js/swiper.min.js'),
+      path.resolve('node_modules', 'magnific-popup/dist/jquery.magnific-popup.min.js'),
+      path.resolve('node_modules', 'scrollMonitor/scrollMonitor.js'),
+      path.resolve('node_modules', 'jquery-validation/dist/jquery.validate.min.js'),
+      path.resolve('node_modules', 'jquery-mask-plugin/dist/jquery.mask.min.js'),
+      path.resolve('node_modules', 'jquery-selectric/public/jquery.selectric.min.js'),
+      path.resolve('node_modules', 'jquery-lazy/jquery.lazy.min.js'),
+      // path.resolve('node_modules', 'animejs/anime.min.js'),
       config.src.js + '/vendor/**/*.js'
      ])
     .pipe(plumber({ errorHandler: config.errorHandler }))
