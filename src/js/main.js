@@ -27,6 +27,7 @@ $(document).ready(function(){
     customTabs(); 
     scrollTop();
     checkBox();
+    // formSend();
     // development helper
     _window.on('resize', debounce(setBreakpoint, 200))
 
@@ -497,6 +498,28 @@ $(document).ready(function(){
       $('.politics input').on('click', function(){    
         $(this).closest('.ui-checkbox').toggleClass('active');
       });
-      }
+    }
+    function formSend(){
+      var wpcf7Elm = document.querySelector( '.wpcf7' );
+      wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+        var el = $('#modal-form-tnx');
+        if (el.length) {
+        $.magnificPopup.open({
+            items: {
+                src: el
+            },
+            type: 'inline',
+            fixedContentPos: true,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'popup-buble',
+        });
+        }
+      }, false ); 
+    }
 
 });
