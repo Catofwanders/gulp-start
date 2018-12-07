@@ -495,7 +495,7 @@ $(document).ready(function(){
       });
     }
     function checkBox(){
-      $('.politics input').on('click', function(){    
+      $('.ui-checkbox input').on('click', function(){    
         $(this).closest('.ui-checkbox').toggleClass('active');
       });
     }
