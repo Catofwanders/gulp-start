@@ -473,7 +473,7 @@ $(document).ready(function(){
   // input type file logic
   function inputFile(){
     $( '.file input' ).on('change',function(){
-      $(this).parent("label").find(".file__name").text(this.files[0].name);
+      $(this).closest("label").find(".file__name").text(this.files[0].name);
     });
   }
   // video events
