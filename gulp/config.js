@@ -11,7 +11,7 @@ var config = {
     root         : 'src',
     templates    : 'src/pug',
     templatesData: 'src/pug/data',
-    pagelist     : 'src/index.yaml',
+    pagelist     : 'src/homepage.yaml',
     sass         : 'src/sass',
     sassGen      : 'src/sass/generated',
     js           : 'src/js',
