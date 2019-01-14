@@ -479,7 +479,7 @@ $(document).ready(function(){
   // video events
   function videoEvents(){
     $('.play-btn').on('click', function(){
-      var myVid = document.getElementById('company-vid');
+      var myVid = $(this).parent().find('video').get(0);
       myVid.controls = true;
       myVid.play();
       $(this).hide();
